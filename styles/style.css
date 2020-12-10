@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +16,7 @@
 }
 
 body {
-    
+    text-align: center;
 }
 
 .header-font {
@@ -25,5 +26,80 @@ body {
 
 .body-font {
     font-family: "Open Sans";
-    font-weight: 700;
+}
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    border: 1px solid var(--pink);
+    background: white;
+    color: var(--pink);
+    font-size: 12px;
+}
+
+header {
+    margin-top: 7rem;
+    color: var(--darkCyan);
+}
+
+header h1 {
+    font-size: 27px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 1.5rem auto 3rem auto;
+}
+
+button {
+    border: 0;
+    background: var(--pink);
+    text-transform: capitalize;
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: ;
+}
+
+.button {
+    width: 230px;
+    height: 50px;
+}
+
+img {
+    border: 1px solid black;
+    width: 50px;
+}
+
+.padding {
+    padding: 0 1rem;
+}
+
+@media (max-width: 370px) {
+    nav img {
+        width: 30vw;
+    }
+
+    header h1, header p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 375px) {
+    header h1 {
+        width: 300px;
+    }
+
+    header h1, header p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header p {
+        width: 340px;
+    }
 }
